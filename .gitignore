@@ -1,6 +1,6 @@
 website/bin
 website/obj
-backend/SHOP.API/obj
-backend/SHOP.Core/obj
-backend/SHOP.CronJobs/obj
-backend/SHOP.Infrastructure/obj
+backend/API/obj
+backend/Core/obj
+backend/CronJobs/obj
+backend/Infrastructure/obj
