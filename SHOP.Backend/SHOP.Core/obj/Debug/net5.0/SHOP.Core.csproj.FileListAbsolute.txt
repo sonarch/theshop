@@ -1,0 +1,12 @@
+D:\my_projects\theshop\Shop.Backend\SHOP.Core\bin\Debug\net5.0\SHOP.Core.deps.json
+D:\my_projects\theshop\Shop.Backend\SHOP.Core\bin\Debug\net5.0\SHOP.Core.dll
+D:\my_projects\theshop\Shop.Backend\SHOP.Core\bin\Debug\net5.0\ref\SHOP.Core.dll
+D:\my_projects\theshop\Shop.Backend\SHOP.Core\bin\Debug\net5.0\SHOP.Core.pdb
+D:\my_projects\theshop\Shop.Backend\SHOP.Core\obj\Debug\net5.0\SHOP.Core.csprojAssemblyReference.cache
+D:\my_projects\theshop\Shop.Backend\SHOP.Core\obj\Debug\net5.0\SHOP.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\my_projects\theshop\Shop.Backend\SHOP.Core\obj\Debug\net5.0\SHOP.Core.AssemblyInfoInputs.cache
+D:\my_projects\theshop\Shop.Backend\SHOP.Core\obj\Debug\net5.0\SHOP.Core.AssemblyInfo.cs
+D:\my_projects\theshop\Shop.Backend\SHOP.Core\obj\Debug\net5.0\SHOP.Core.csproj.CoreCompileInputs.cache
+D:\my_projects\theshop\Shop.Backend\SHOP.Core\obj\Debug\net5.0\SHOP.Core.dll
+D:\my_projects\theshop\Shop.Backend\SHOP.Core\obj\Debug\net5.0\ref\SHOP.Core.dll
+D:\my_projects\theshop\Shop.Backend\SHOP.Core\obj\Debug\net5.0\SHOP.Core.pdb
