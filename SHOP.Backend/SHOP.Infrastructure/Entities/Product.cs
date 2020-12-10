@@ -1,13 +1,18 @@
-﻿namespace SHOP.Infrastructure.Entities
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace SHOP.Infrastructure.Entities
 {
     public class Product : GuidEntity
     {
-        public string ProductId { get; set; }
         public string SupplierId { get; set; }
         public string CategoryId { get; set; }
         public string Name { get; set; }
         public decimal UnitPrice { get; set; }
         public int UnitsInStock { get; set; }
         public int UnitsOnOrder { get; set; }
+        [ForeignKey("CategoryId")]
+        public virtual Category Category { get; set; }
+        [ForeignKey("SupplierId")]
+        public virtual Supplier Supplier { get; set; }
     }
 }

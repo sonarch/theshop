@@ -1,7 +1,9 @@
-﻿namespace SHOP.Infrastructure.Entities
+﻿using System.Collections.Generic;
+
+namespace SHOP.Infrastructure.Entities
 {
     public class Employee : User
     {
-        public string EmployeeId { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }
