@@ -1,0 +1,6 @@
+website/bin
+website/obj
+backend/API/obj
+backend/Core/obj
+backend/CronJobs/obj
+backend/Infrastructure/obj
