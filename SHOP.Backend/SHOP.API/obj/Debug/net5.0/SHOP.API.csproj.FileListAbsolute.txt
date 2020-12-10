@@ -35,3 +35,5 @@ D:\my_projects\theshop\Shop.Backend\SHOP.API\obj\Debug\net5.0\SHOP.API.dll
 D:\my_projects\theshop\Shop.Backend\SHOP.API\obj\Debug\net5.0\ref\SHOP.API.dll
 D:\my_projects\theshop\Shop.Backend\SHOP.API\obj\Debug\net5.0\SHOP.API.pdb
 D:\my_projects\theshop\Shop.Backend\SHOP.API\obj\Debug\net5.0\SHOP.API.genruntimeconfig.cache
+D:\my_projects\theshop\SHOP.Backend\SHOP.API\bin\Debug\net5.0\appsettings.Production.json
+D:\my_projects\theshop\SHOP.Backend\SHOP.API\bin\Debug\net5.0\appsettings.QC.json
