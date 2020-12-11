@@ -29,6 +29,7 @@ namespace SHOP.Infrastructure.Database
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Shipper> Shippers { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<User> User { get; set; }
 
 
     }

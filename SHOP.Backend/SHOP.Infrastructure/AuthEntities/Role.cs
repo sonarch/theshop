@@ -1,6 +1,6 @@
 ﻿using Core.Entities;
 
-namespace SHOP.Infrastructure.AuthEntities
+namespace SHOP.Infrastructure.Entities
 {
     public class Role : GuidEntity
     {

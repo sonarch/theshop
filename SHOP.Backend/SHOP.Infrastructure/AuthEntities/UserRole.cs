@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SHOP.Infrastructure.AuthEntities
+namespace SHOP.Infrastructure.Entities
 {
     public class UserRole
     {

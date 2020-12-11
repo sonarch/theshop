@@ -26,7 +26,7 @@ namespace SHOP.API
 
             string connectionString = Configuration.GetConnectionString("DbConnection");
             services.AddAppDatabase(connectionString);
-
+            services.AddIdentityOptions();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -53,7 +53,7 @@ namespace SHOP.API
 
             app.UseRouting();
 
-            //app.UseAuthentication();
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

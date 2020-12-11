@@ -1,4 +1,4 @@
-﻿namespace SHOP.Infrastructure.AuthEntities
+﻿namespace SHOP.Infrastructure.Entities
 {
     public class UserClaim
     {
