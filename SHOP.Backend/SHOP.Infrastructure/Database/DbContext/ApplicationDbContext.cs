@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using SHOP.Infrastructure.Entities;
 
 namespace SHOP.Infrastructure.Database
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext
     {
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
@@ -17,6 +18,7 @@ namespace SHOP.Infrastructure.Database
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             //use this to configure the model
             modelBuilder.Entity<OrderDetail>().HasKey( o => new { o.OrderId , o.ProductId});
         }
@@ -29,8 +31,6 @@ namespace SHOP.Infrastructure.Database
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Shipper> Shippers { get; set; }
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<User> User { get; set; }
-
 
     }
 }

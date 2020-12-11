@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using SHOP.API.Configuration;
+using SHOP.Infrastructure.Database;
 
 namespace SHOP.API
 {
@@ -26,6 +28,9 @@ namespace SHOP.API
 
             string connectionString = Configuration.GetConnectionString("DbConnection");
             services.AddAppDatabase(connectionString);
+            services.AddServicesDependency();
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddIdentityOptions();
             services.AddControllers();
             services.AddSwaggerGen(c =>

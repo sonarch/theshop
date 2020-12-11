@@ -1,14 +1,10 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.AspNetCore.Identity;
+using System.Collections.Generic;
 
 namespace SHOP.Infrastructure.Entities
 {
-    public class Employee : User
+    public class Employee : IdentityUser
     {
-        [Key]
-        [ForeignKey("Id")]
-        public User User { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
     }
 }
