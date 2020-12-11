@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Core.Entities;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SHOP.Infrastructure.Entities
 {
@@ -7,6 +8,7 @@ namespace SHOP.Infrastructure.Entities
         public string SupplierId { get; set; }
         public string CategoryId { get; set; }
         public string Name { get; set; }
+        [Column(TypeName = "decimal(18, 2)")]
         public decimal UnitPrice { get; set; }
         public int UnitsInStock { get; set; }
         public int UnitsOnOrder { get; set; }

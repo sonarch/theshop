@@ -1,4 +1,4 @@
-﻿using Authentication.Entities;
+﻿using SHOP.Infrastructure.AuthEntities;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -8,8 +8,7 @@ namespace SHOP.Infrastructure.Entities
     public class Employee : User
     {
         [Key]
-        public string UserId { get; set; }
-        [ForeignKey("UserId")]
+        [ForeignKey("Id")]
         public User User { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
     }

@@ -1,4 +1,6 @@
-﻿namespace SHOP.Infrastructure.Entities
+﻿using Core.Entities;
+
+namespace SHOP.Infrastructure.Entities
 {
     public class Supplier : GuidEntity
     {

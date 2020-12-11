@@ -5,13 +5,13 @@ namespace SHOP.Infrastructure.Entities
 {
     public class OrderDetail
     {
-        [Key, Column(Order = 1)]
         public string OrderId { get; set; }
-        [Key, Column(Order = 2)]
         public string ProductId { get; set; }
+        [Column(TypeName = "decimal(18, 2)")]
         public decimal UnitPrice { get; set; }
         public int Quantity { get; set; }
         [ForeignKey("OrderId")]
+        [Column(TypeName = "decimal(18, 2)")]
         public virtual Order Order { get; set; }
         [ForeignKey("ProductId")]
         public virtual Product Product { get; set; }

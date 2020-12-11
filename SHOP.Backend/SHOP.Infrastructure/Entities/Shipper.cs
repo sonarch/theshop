@@ -1,4 +1,5 @@
-﻿using SHOP.Infrastructure.Enums;
+﻿using Core.Entities;
+using SHOP.Infrastructure.Enums;
 using System.Collections.Generic;
 
 namespace SHOP.Infrastructure.Entities

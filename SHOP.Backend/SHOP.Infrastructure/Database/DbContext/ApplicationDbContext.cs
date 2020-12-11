@@ -18,6 +18,7 @@ namespace SHOP.Infrastructure.Database
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //use this to configure the model
+            modelBuilder.Entity<OrderDetail>().HasKey( o => new { o.OrderId , o.ProductId});
         }
 
         public DbSet<Category> Categories { get; set; }
