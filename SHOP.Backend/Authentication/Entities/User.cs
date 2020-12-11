@@ -1,6 +1,7 @@
-﻿using System.Security.Principal;
+﻿using Core.Entities;
+using System.Security.Principal;
 
-namespace SHOP.Infrastructure.Entities
+namespace Authentication.Entities
 {
     public class User : GuidEntity, IIdentity
     {

@@ -1,1 +1,14 @@
 .vs
+Authentication/bin
+Authentication/obj
+
+Core/.vs
+Core/bin
+Core/obj
+
+SHOP.API/Logs
+SHOP.API/obj
+SHOP.API/bin
+
+SHOP.Infrastructure/obj
+SHOP.Infrastructure/bin

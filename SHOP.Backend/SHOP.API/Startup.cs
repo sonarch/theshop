@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using SHOP.Infrastructure.Database;
 
 namespace SHOP.API
 {
@@ -26,6 +27,11 @@ namespace SHOP.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+
+            services.Configure<AppSettings>(Configuration);
+
+            string connectionString = Configuration.GetConnectionString("DbConnection");
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -44,9 +50,16 @@ namespace SHOP.API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SHOP.API v1"));
             }
 
+            if (env.IsProduction() || env.IsStaging())
+            {
+                app.UseExceptionHandler("/Error");
+            }
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            //app.UseAuthentication();
 
             app.UseAuthorization();
 

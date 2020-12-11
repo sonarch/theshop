@@ -1,7 +1,7 @@
-﻿using SHOP.Core.Helpers;
+﻿using Core.Helpers;
 using System;
 
-namespace SHOP.Infrastructure.Entities
+namespace Core.Entities
 {
     public abstract class BaseEntity
     {

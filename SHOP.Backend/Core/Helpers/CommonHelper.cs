@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SHOP.Core.Helpers
+namespace Core.Helpers
 {
     public static class CommonHelper
     {
